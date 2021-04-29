@@ -1,0 +1,1 @@
+This is the resume repo stored static files, please visit following links: https://wangchenxing.com or https://morningstarwang.com.
