@@ -9,8 +9,11 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -106,6 +109,8 @@
                   width="32"></a>
               <a href="https://www.linkedin.com/in/chenxing-wang-678457b3/"><img src="images/Linkedin-icon.png"
                   height="32" width="32"></a>
+                <a href="#" onclick="showIframeModalExample()"><img src="https://open.weixin.qq.com/zh_CN/htmledition/res/assets/res-design-download/icon64_appwx_logo.png"
+                    height="32" width="32"></a>
             </ul>
 
           </div>
@@ -227,8 +232,6 @@
               [<a href="https://doi.org/10.1145/3341162.3344862">Paper</a>]
             </li>
             <p style="margin-top:3px">
-
-
             </p>
           </div>
         </div>
@@ -262,5 +265,20 @@
 
   </div>
 </body>
+<script>
+  function showIframeModalExample() {
 
+let modalProperties = {autoOpen: true, width: 600, height: 300, modal: true, title: '感谢关注'};    
+    // create wrapper iframe
+    let wrapperIframe = $('<img height="200" src="images/wechat.png"/>');
+    
+    // create jquery dialog by a 'div' with 'iframe' appended
+    $("<div></div>").append(wrapperIframe).dialog(modalProperties);
+    
+    // insert html content to iframe 'body'
+    let wrapperIframeDocument = wrapperIframe[0].contentDocument;
+    let wrapperIframeBody = $('body', wrapperIframeDocument);
+    wrapperIframeBody.html(modalHtmlContent);
+}
+</script>
 </html>
