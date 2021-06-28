@@ -10,10 +10,10 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -109,8 +109,9 @@
                   width="32"></a>
               <a href="https://www.linkedin.com/in/chenxing-wang-678457b3/"><img src="images/Linkedin-icon.png"
                   height="32" width="32"></a>
-                <a href="#" onclick="showIframeModalExample()"><img src="https://open.weixin.qq.com/zh_CN/htmledition/res/assets/res-design-download/icon64_appwx_logo.png"
-                    height="32" width="32"></a>
+              <a href="#" onclick="showIframeModalExample()"><img
+                  src="https://open.weixin.qq.com/zh_CN/htmledition/res/assets/res-design-download/icon64_appwx_logo.png"
+                  height="32" width="32"></a>
             </ul>
 
           </div>
@@ -211,7 +212,8 @@
               [<a href="https://github.com/morningstarwang/MSRLSTM-open">Code</a>]
             </li>
             <li id="tits-1">
-              <b> NDGCN: Network in Network, Dilate Convolution and Graph Convolutional Networks Based Transportation Mode Recognition</b><br>
+              <b> NDGCN: Network in Network, Dilate Convolution and Graph Convolutional Networks Based Transportation
+                Mode Recognition</b><br>
               Y. Qin, H. Luo, F. Zhao, <b>C. Wang</b> and Y. Fang<br>
               <em>IEEE Transactions on Vehicular Technology</em><br>
               [<a href="https://ieeexplore.ieee.org/document/9360463">Paper</a>]
@@ -231,6 +233,19 @@
                 Computing and Proceedings of the 2019 ACM International Symposium on Wearable Computers </em><br>
               [<a href="https://doi.org/10.1145/3341162.3344862">Paper</a>]
             </li>
+            <li id="cnki1">
+              <b> 基于深度残差长短记忆网络交通流量预测算法</b><br>
+              刘世泽,秦艳君,<b>王晨星</b>,苏琳,柯其学,罗海勇,孙艺,王宝会<br>
+              <em>计算机应用 </em><br>
+              [<a href="http://kns.cnki.net/kcms/detail/51.1307.TP.20210622.0857.004.html">Paper</a>]
+            </li>
+            <li id="cnki2">
+              <b> 基于多尺度特征提取的交通模式识别算法</b><br>
+              刘世泽,秦艳君,<b>王晨星</b>,高存远,罗海勇,赵方,王宝会<br>
+              <em>计算机应用 </em><br>
+              [<a href="http://kns.cnki.net/kcms/detail/51.1307.TP.20210621.1654.012.html">Paper</a>]
+            </li>
+
             <p style="margin-top:3px">
             </p>
           </div>
@@ -268,17 +283,18 @@
 <script>
   function showIframeModalExample() {
 
-let modalProperties = {autoOpen: true, width: 600, height: 300, modal: true, title: '感谢关注'};    
+    let modalProperties = { autoOpen: true, width: 600, height: 300, modal: true, title: '感谢关注' };
     // create wrapper iframe
     let wrapperIframe = $('<img height="200" src="images/wechat.png"/>');
-    
+
     // create jquery dialog by a 'div' with 'iframe' appended
     $("<div></div>").append(wrapperIframe).dialog(modalProperties);
-    
+
     // insert html content to iframe 'body'
     let wrapperIframeDocument = wrapperIframe[0].contentDocument;
     let wrapperIframeBody = $('body', wrapperIframeDocument);
     wrapperIframeBody.html(modalHtmlContent);
-}
+  }
 </script>
+
 </html>
